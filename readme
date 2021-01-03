@@ -1,0 +1,7 @@
+To get access via SFTP through the console -
+ (if it was not possible to connect via a filezilla-type file client),
+you need to change the user's shell to anything other that /sbin/nologin.
+
+For example:
+	#sftp ftp3@ftp.lixhm.local
+	#usermod -s /bin/bash ftp3
